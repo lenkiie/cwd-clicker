@@ -1,11 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background flex flex-col">
+      {/* Logo in top left */}
+      <div className="p-6 md:p-8">
+        <img 
+          src="/cwd_logo.png" 
+          alt="CWD Logo" 
+          className="h-12 md:h-16 w-auto"
+        />
+      </div>
+
+      {/* Centered button */}
+      <div className="flex-1 flex items-center justify-center px-4">
+        <Button 
+          size="lg"
+          className="text-lg px-8 py-6 rounded-xl hover:scale-105 transition-transform duration-200"
+        >
+          Start here
+        </Button>
       </div>
     </div>
   );
